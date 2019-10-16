@@ -26,18 +26,27 @@ Then, what we need is to:
 3) Receive responses 
 4) Manipulate responses
 
-How does the API work?
+ Using Requests Library¶
 
-APIs use the HTTP (Hyper-Text Transfer Protocol) which is based on a request-response cycle
- From: https://zapier.com/learn/apis/chapter-2-protocols/
+Requests is a simple Python HTTP library. It provides methods for accessing Web resources via HTTP. Requests allows you to send HTTP/1.1 requests, without the need for a lot of work. It is avialble within Anaconda
 
-Request structure:
+Lets try something real!
+We will use Google Books APIs
+https://developers.google.com/books/
+You can find the reference and other examples here: https://developers.google.com/books/docs/v1/reference/
 
+Copy and paste the following URL in a browser:
+https://www.googleapis.com/books/v1/volumes?q=isbn:1860462979
+What can you see?
 
+Google books API send requests to get information about books using their isbn.
+While opening the URL in a browser, the browser sends the HTTP request to get the information from the API. The response is what you saw in the browser. 
+But what is that format?
 
-Response structure:
+Yes! That is a JSON response!
+Let us investigate it!
 
-
-
-Complete list of HTTP status codes: https://www.restapitutorial.com/httpstatuscodes.html
+JSON (JavaScript Object Notation) a lightweight data-interchange format. JSON is easy for humans to read and write and is easy for machines to parse and generate.
+More info at: http://json.org
+Tutorial at: http://www.w3schools.com/json/ 
 
